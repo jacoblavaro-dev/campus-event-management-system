@@ -76,7 +76,7 @@
                                 <!--end::Menu Body-->
                                 <!--begin::Menu Footer-->
                                 <li class="user-footer">
-                                    <a href="#" class="btn btn-outline-secondary">Profile</a>
+                                    <a href="{{ url('users-account', auth()->id()) }}/edit" class="btn btn-outline-secondary">Edit Profile</a>
                                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="btn btn-outline-danger float-end">Sign out</a>
                                     <form action="{{ route('logout') }}" id="logout-form" method="post" class="d-none">
                                         @csrf
