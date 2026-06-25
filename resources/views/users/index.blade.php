@@ -19,6 +19,7 @@
                         <th>Fullname</th>
                         <th>Email</th>
                         <th">Contact Number</th>
+                        <th">Role</th>
                         <th">Birthdate</th>
                         <th">Action</th>
                     </tr>
@@ -30,6 +31,7 @@
                         <td>{{ $user->fullname }}</td>
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->contact_number }}</td>
+                        <td>{{ role }}</td>
                         <td>{{ $user->display_birthdate }}</td>
                         <td class="d-flex">
                             <a href="{{ url('users', $user->id) }}/edit" class="btn btn-success btn-sm">Edit</a>
