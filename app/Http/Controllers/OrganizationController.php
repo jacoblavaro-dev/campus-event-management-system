@@ -16,6 +16,7 @@ class OrganizationController extends Controller
 
     public function create()
     {
+        $data['users'] = User::where('role', 'Faculty')->orderBy('fname')->get();
         return view('organizations.create');
     }
 

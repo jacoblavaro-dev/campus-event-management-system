@@ -3,7 +3,7 @@
                 <div class="mb-3">
                     <label for="name" class="form-label">Organization Name</label>
                     <input type="text" name="name" id="name"
-                        value="{{ old('name') }}"
+                        value=" isset($organization->name) ? $organization->name : '' }}"
                         class="form-control @error('name') is-invalid @enderror">
                     @error('name')
                         <div class="invalid-feedback">{{ $message }}</div>
@@ -13,7 +13,7 @@
                 <div class="mb-3">
                     <label for="adviser" class="form-label">Adviser</label>
                     <input type="text" name="adviser" id="adviser"
-                        value="{{ old('adviser') }}"
+                        value=" {{ isset($organization->name) ? $organization->name : '' }}"
                         class="form-control @error('adviser') is-invalid @enderror">
                     @error('adviser')
                         <div class="invalid-feedback">{{ $message }}</div>
