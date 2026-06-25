@@ -1,8 +1,8 @@
-@extends('layouts.app', ['page_title' => 'Edit Profile'])
+@extends('layouts.app', ['page_title' => 'Edit User Info'])
 @section('content')
 
 <div class="col-md-6">
-        @if(session('success'))
+    @if(session('success'))
      <div class="alert alert-success" role="alert">
        {{ session('success') }}
     </div>
@@ -12,7 +12,7 @@
             <div class="card-title">Edit Information</div>
         </div>
 
-        <form action="{{ url('users-account' . auth()->user()->id) }}"
+        <form action="{{ url('users', $user->id) }}"
               method="POST"
               enctype="multipart/form-data">
 

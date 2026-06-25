@@ -1,19 +1,13 @@
-@extends('layouts.app', ['page_title' => 'Edit Profile'])
+@extends('layouts.app', ['page_title' => 'Create User Info'])
 @section('content')
 
 <div class="col-md-6">
-        @if(session('success'))
-     <div class="alert alert-success" role="alert">
-       {{ session('success') }}
-    </div>
-    @endif
     <div class="card card-primary card-outline mb-4">
         <div class="card-header">
-            <div class="card-title">Edit Information</div>
+            <div class="card-title">User Information</div>
         </div>
 
-        <form action="{{ url('users-account' . auth()->user()->id) }}"
-              method="POST"
+        <form action="{{ url('users') }}"
               enctype="multipart/form-data">
 
             @csrf
@@ -28,7 +22,6 @@
                         name="fname"
                         class="form-control @error ('fname') is-invalid @enderror"
                         id="fname"
-                        value="{{ $user->fname }}"
                     >
                 </div>
 
@@ -39,7 +32,6 @@
                         name="lname"
                         class="form-control @error ('lname') is-invalid @enderror"
                         id="lname"
-                        value="{{ $user->lname }}"
                     >
                 </div>
 
@@ -50,7 +42,6 @@
                         name="email"
                         class="form-control @error ('email') is-invalid @enderror"
                         id="email"
-                        value="{{ $user->email }}"
                     >
                 </div>
 
@@ -61,7 +52,6 @@
                         name="contact_number"
                         class="form-control @error ('contact_number') is-invalid @enderror"
                         id="contact_number"
-                        value="{{ $user->contact_number }}"
                     >
                 </div>
 
@@ -72,7 +62,6 @@
                         name="birthdate"
                         class="form-control @error ('birthdate') is-invalid @enderror"
                         id="birthdate"
-                        value="{{ $user->birthdate }}"
                     >
                 </div>
 
@@ -83,7 +72,6 @@
                         name="address"
                         class="form-control @error ('address') is-invalid @enderror"
                         id="address"
-                        value="{{ $user->address }}"
                     >
                 </div>
 

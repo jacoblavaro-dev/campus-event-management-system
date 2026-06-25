@@ -28,7 +28,7 @@
     <!--begin::Accessibility Features-->
     <!-- Skip links will be dynamically added by accessibility.js -->
     <meta name="supported-color-schemes" content="light dark" />
-    <link rel="preload" href="{{ url('../css/adminlte.css') }}" as="style" />
+    <link rel="preload" href="{{ url('assets/css/adminlte.css') }}" as="style" />
     <!--end::Accessibility Features-->
 
     <!--begin::Fonts-->
@@ -59,7 +59,7 @@
     <!--end::Third Party Plugin(Bootstrap Icons)-->
 
     <!--begin::Required Plugin(AdminLTE)-->
-    <link rel="stylesheet" href="{{ url('../css/adminlte.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/adminlte.css') }}" />
     <!--end::Required Plugin(AdminLTE)-->
   </head>
   <!--end::Head-->
@@ -77,11 +77,22 @@
           <form action="{{ route('register') }}" method="post">
             @csrf
             <div class="input-group mb-3">
-              <input type="text" name="name" class="form-control @error('name') is invalid @enderror" placeholder="Full Name" />
+              <input type="text" name="fname" class="form-control @error('fname') is invalid @enderror" placeholder="First Name" />
               <div class="input-group-text">
                 <span class="bi bi-person"></span>
               </div>
-            @error('name')
+            @error('fname')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" name="lname" class="form-control @error('lname') is invalid @enderror" placeholder="Last Name" />
+              <div class="input-group-text">
+                <span class="bi bi-person"></span>
+              </div>
+            @error('lname')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

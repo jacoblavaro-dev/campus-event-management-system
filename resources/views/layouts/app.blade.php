@@ -98,12 +98,12 @@
                         <!--begin::Row-->
                         <div class="row">
                             <div class="col-sm-6">
-                                <h3 class="mb-0">Dashboard</h3>
+                                <h3 class="mb-0">{{ $page_title }}</h3>
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-end">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                    <li class="breadcrumb-item active" aria-current="page">{{ $page_title }}</li>
                                 </ol>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
             crossorigin="anonymous"
         ></script>
         <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-        <script src="{{ url('/js/adminlte.js"') }}></script>
+        <script src="{{ url('assets/js/adminlte.js') }}"></script>
         <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
         <script>
             const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";

@@ -2,16 +2,16 @@
                 <!--begin::Sidebar Brand-->
                 <div class="sidebar-brand">
                     <!--begin::Brand Link-->
-                    <a href="./index.html" class="brand-link">
+                    <a href="{{ url('home') }}" class="brand-link">
                         <!--begin::Brand Image-->
                         <img
-                            src="./assets/img/AdminLTELogo.png"
+                            src="{{ url('assets/img/AdminLTELogo.png') }}"
                             alt="AdminLTE Logo"
                             class="brand-image opacity-75 shadow"
                         />
                         <!--end::Brand Image-->
                         <!--begin::Brand Text-->
-                        <span class="brand-text fw-light">AdminLTE 4</span>
+                        <span class="brand-text fw-light">CEMS</span>
                         <!--end::Brand Text-->
                     </a>
                     <!--end::Brand Link-->
@@ -30,23 +30,36 @@
                             data-accordion="false"
                             id="navigation"
                         >
-                            <li class="nav-item menu-open">
-                                <a href="#" class="nav-link">
+                            <li class="nav-item">
+                                <a href="{{ url('home') }}" class="nav-link">
                                     <i class="nav-icon bi bi-speedometer"></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <i class="nav-icon bi bi-gear"></i>
                                     <p>
-                                        Dashboard
+                                        Settings
                                         <i class="nav-arrow bi bi-chevron-right"></i>
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="./index.html" class="nav-link">
+                                        <a href=" {{ url('users') }}" class="nav-link">
                                             <i class="nav-icon bi bi-circle"></i>
-                                            <p>Dashboard v1</p>
+                                            <p>Manage Users</p>
                                         </a>
                                     </li>
+                                     <li class="nav-item">
+                                        <a href=" {{ url('organizations') }}" class="nav-link">
+                                            <i class="nav-icon bi bi-circle"></i>
+                                            <p>Manage Organizations</p>
+                                        </a>
+                                </li>
                                 </ul>
-                            </li>
+                            </li>    
+                               
                             <li class="nav-item">
                                 <a href="./generate/theme.html" class="nav-link">
                                     <i class="nav-icon bi bi-palette"></i>
