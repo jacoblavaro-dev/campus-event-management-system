@@ -3,7 +3,11 @@
     <!--begin::Head-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<<<<<<< HEAD
         <title>{{ config('app.name') . ' | ' . $page_title }}</title>
+=======
+        <title>{{ config('app.name') . '|' . $page_title}}</title>
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
 
         <!--begin::Accessibility Meta Tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
@@ -102,8 +106,12 @@
                             </div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-end">
+<<<<<<< HEAD
                                     <!-- FIXED HOME LINK BELOW -->
                                     <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+=======
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
                                     <li class="breadcrumb-item active" aria-current="page">{{ $page_title }}</li>
                                 </ol>
                             </div>
@@ -258,8 +266,12 @@
 
         <!-- sortablejs -->
         <script>
+<<<<<<< HEAD
             // Added window. to bypass PHP Namespace Extension warnings
             new window.Sortable(document.querySelector(".connectedSortable"), {
+=======
+            new Sortable(document.querySelector(".connectedSortable"), {
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
                 group: "shared",
                 handle: ".card-header",
             });
@@ -330,8 +342,12 @@
                 },
             };
 
+<<<<<<< HEAD
             // Added window. to bypass PHP Namespace Extension warnings
             const sales_chart = new window.ApexCharts(document.querySelector("#revenue-chart"), sales_chart_options);
+=======
+            const sales_chart = new ApexCharts(document.querySelector("#revenue-chart"), sales_chart_options);
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
             sales_chart.render();
         </script>
 
@@ -349,8 +365,13 @@
 
         <!-- jsvectormap -->
         <script>
+<<<<<<< HEAD
             // Added window. to bypass PHP Namespace Extension warnings
             new window.jsVectorMap({
+=======
+            // World map by jsVectorMap
+            new jsVectorMap({
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
                 selector: "#world-map",
                 map: "world",
             });
@@ -381,8 +402,12 @@
                 colors: ["#DCE6EC"],
             };
 
+<<<<<<< HEAD
             // Added window. to bypass PHP Namespace Extension warnings
             const sparkline1 = new window.ApexCharts(document.querySelector("#sparkline-1"), option_sparkline1);
+=======
+            const sparkline1 = new ApexCharts(document.querySelector("#sparkline-1"), option_sparkline1);
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
             sparkline1.render();
 
             const option_sparkline2 = {
@@ -410,7 +435,11 @@
                 colors: ["#DCE6EC"],
             };
 
+<<<<<<< HEAD
             const sparkline2 = new window.ApexCharts(document.querySelector("#sparkline-2"), option_sparkline2);
+=======
+            const sparkline2 = new ApexCharts(document.querySelector("#sparkline-2"), option_sparkline2);
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
             sparkline2.render();
 
             const option_sparkline3 = {
@@ -438,10 +467,18 @@
                 colors: ["#DCE6EC"],
             };
 
+<<<<<<< HEAD
             const sparkline3 = new window.ApexCharts(document.querySelector("#sparkline-3"), option_sparkline3);
+=======
+            const sparkline3 = new ApexCharts(document.querySelector("#sparkline-3"), option_sparkline3);
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
             sparkline3.render();
         </script>
         <!--end::Script-->
     </body>
     <!--end::Body-->
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4

@@ -2,28 +2,45 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Organization;
 use App\Models\User; // <-- ADDED THIS IMPORT
 use Illuminate\Http\Request;
+=======
+use Illuminate\Http\Request;
+use App\Models\Organization;
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
 
 class OrganizationController extends Controller
 {
     public function index()
     {
+<<<<<<< HEAD
         // Added 'with("adviser")' to load the adviser data efficiently
         $data['organizations'] = Organization::with('adviser')->latest()->get();
         return view('organizations.index', $data);
+=======
+        $organizations = Organization::latest()->get();
+
+        return view('organizations.index', compact('organizations'));
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
     }
 
     public function create()
     {
+<<<<<<< HEAD
         // Fetch only users who are Faculty to pass to the dropdown
         $data['faculties'] = User::where('role', 'Faculty')->orderBy('fname')->get();
         return view('organizations.create-org', $data);
+=======
+        $data['users'] = User::where('role', 'Faculty')->orderBy('fname')->get();
+        return view('organizations.create');
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
     }
 
     public function store(Request $request)
     {
+<<<<<<< HEAD
         $request->validate([
             'name'        => 'required|string|max:255',
             'acronym'     => 'nullable|string|max:50',
@@ -87,5 +104,23 @@ class OrganizationController extends Controller
         $org->delete();
 
         return redirect()->back()->with('success', 'Organization has been deleted.');
+=======
+        //
+    }
+
+    public function edit(string $id)
+    {
+        //
+    }
+
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    public function destroy(string $id)
+    {
+        //
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
     }
 }

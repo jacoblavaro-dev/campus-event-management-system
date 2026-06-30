@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\OrganizationController;
 use App\Http\Controllers\UserController;
+<<<<<<< HEAD
 use App\Http\Controllers\DashboardController; 
 use App\Http\Controllers\StudentController;   
 use Illuminate\Support\Facades\Route;
@@ -10,10 +11,15 @@ use Illuminate\Support\Facades\Auth;
 // -----------------------------------------------------
 // 1. Public Route
 // -----------------------------------------------------
+=======
+use Illuminate\Support\Facades\Route;
+
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
 Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 // Authentication Routes
 Auth::routes();
 
@@ -62,3 +68,16 @@ Route::middleware(['auth', 'can:manage-students'])->group(function () {
     Route::delete('/students/{student}', [StudentController::class, 'destroy'])
         ->name('students.destroy');
 });
+=======
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware('auth:web')->group(function() {
+    Route::get('/users-account/{id}/edit', [UserController::class, 'editAccount']);
+    Route::put('/users-account/{id}', [UserController::class, 'updateAccount']);
+    
+    Route::resource('users', UserController::class);
+    Route::resource('organizations', OrganizationController::class);
+});
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4

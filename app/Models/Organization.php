@@ -11,6 +11,7 @@ class Organization extends Model
 
     public function events()
     {
+<<<<<<< HEAD
         return $this->hasMany(\App\Models\Event::class, 'organization_id');
     }
 
@@ -20,3 +21,8 @@ class Organization extends Model
         return $this->belongsTo(\App\Models\User::class, 'adviser_id');
     }
 }
+=======
+        return $this->hasMany('events', 'organization_id');
+    }
+}
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4

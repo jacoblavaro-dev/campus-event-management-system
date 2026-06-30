@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Student;
+=======
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+<<<<<<< HEAD
     /**
      * Display a listing of the students.
      */
@@ -90,3 +94,7 @@ class StudentController extends Controller
         return redirect('students')->with('success', 'Student deleted successfully.');
     }
 }
+=======
+    //
+}
+>>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4

@@ -4,34 +4,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{{ config('app.name') }}</title>
-<<<<<<< HEAD
-=======
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Accessibility Meta Tags-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
         <meta name="color-scheme" content="light dark" />
         <meta name="theme-color" content="#007bff" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
         <!--end::Accessibility Meta Tags-->
-<<<<<<< HEAD
-=======
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Primary Meta Tags-->
         <meta name="title" content="AdminLTE 4 | Login Page v2" />
         <meta name="author" content="ColorlibHQ" />
         <meta
             name="description"
             content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS. Fully accessible with WCAG 2.1 AA compliance."
-<<<<<<< HEAD
-            />
-        <meta
-            name="keywords"
-            content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard, accessible admin panel, WCAG compliant"
-            />
-        <!--end::Primary Meta Tags-->
-=======
         />
         <meta
             name="keywords"
@@ -39,16 +25,12 @@
         />
         <!--end::Primary Meta Tags-->
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Accessibility Features-->
         <!-- Skip links will be dynamically added by accessibility.js -->
         <meta name="supported-color-schemes" content="light dark" />
         <link rel="preload" href="{{ url('assets/css/adminlte.css') }}" as="style" />
         <!--end::Accessibility Features-->
-<<<<<<< HEAD
-=======
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Fonts-->
         <link
             rel="stylesheet"
@@ -57,42 +39,27 @@
             crossorigin="anonymous"
             media="print"
             onload="this.media = 'all'"
-<<<<<<< HEAD
-            />
-        <!--end::Fonts-->
-=======
         />
         <!--end::Fonts-->
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Third Party Plugin(OverlayScrollbars)-->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/styles/overlayscrollbars.min.css"
             crossorigin="anonymous"
-<<<<<<< HEAD
-            />
-        <!--end::Third Party Plugin(OverlayScrollbars)-->
-=======
         />
         <!--end::Third Party Plugin(OverlayScrollbars)-->
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Third Party Plugin(Bootstrap Icons)-->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
             crossorigin="anonymous"
-<<<<<<< HEAD
-            />
-        <!--end::Third Party Plugin(Bootstrap Icons)-->
-=======
         />
         <!--end::Third Party Plugin(Bootstrap Icons)-->
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Required Plugin(AdminLTE)-->
-        <link rel="stylesheet" href="{{ url('assets/css/adminlte.css') }}" />
+        <link rel="stylesheet" href="../css/adminlte.css" />
         <!--end::Required Plugin(AdminLTE)-->
     </head>
     <!--end::Head-->
@@ -104,62 +71,31 @@
                     <a
                         href="../index2.html"
                         class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover"
-<<<<<<< HEAD
-                        >
-                        <h1 class="mb-0">{{ config('app.name') }}</h1>
-=======
                     >
                         <h1 class="mb-0"><b>{{ config('app.name') }}</b>LTE</h1>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
                     </a>
                 </div>
                 <div class="card-body login-card-body">
                     <p class="login-box-msg">Sign in to start your session</p>
-<<<<<<< HEAD
-=======
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
-                    <form action="{{ route('login') }}" method="post">
-                        @csrf
+                    <form action="../index3.html" method="post">
                         <div class="input-group mb-1">
                             <div class="form-floating">
-                                <input id="loginEmail" type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="" placeholder="" />
+                                <input id="loginEmail" type="email" class="form-control" value="" placeholder="" />
                                 <label for="loginEmail">Email</label>
                             </div>
                             <div class="input-group-text">
                                 <span class="bi bi-envelope"></span>
                             </div>
-                            @error('email')
-<<<<<<< HEAD
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-=======
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
-                            @enderror
                         </div>
                         <div class="input-group mb-1">
                             <div class="form-floating">
-                                <input id="loginPassword" type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="" />
+                                <input id="loginPassword" type="password" class="form-control" placeholder="" />
                                 <label for="loginPassword">Password</label>
                             </div>
                             <div class="input-group-text">
                                 <span class="bi bi-lock-fill"></span>
                             </div>
-                            @error('password')
-<<<<<<< HEAD
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-=======
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
-                            @enderror
                         </div>
                         <!--begin::Row-->
                         <div class="row">
@@ -179,11 +115,6 @@
                         </div>
                         <!--end::Row-->
                     </form>
-<<<<<<< HEAD
-                     
-                    <p class="mb-1">
-                        <a href={{ route('password.request') }}>I forgot my password</a>
-=======
 
                     <div class="social-auth-links text-center mb-3 d-grid gap-2">
                         <p>- OR -</p>
@@ -195,61 +126,125 @@
                     <!-- /.social-auth-links -->
 
                     <p class="mb-1">
-                        <a href="{{ route('password.request') }}">I forgot my password</a>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
+                        <a href="forgot-password.html">I forgot my password</a>
                     </p>
                     <p class="mb-0">
-                        <a href="{{ url('register') }}" class="text-center"> Register a new membership </a>
+                        <a href="register.html" class="text-center"> Register a new membership </a>
                     </p>
                 </div>
                 <!-- /.login-card-body -->
             </div>
         </div>
         <!-- /.login-box -->
-<<<<<<< HEAD
-=======
 
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--begin::Third Party Plugin(OverlayScrollbars)-->
         <script
             src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/browser/overlayscrollbars.browser.es6.min.js"
             crossorigin="anonymous"
-<<<<<<< HEAD
-            ></script>
-=======
         ></script>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             crossorigin="anonymous"
-<<<<<<< HEAD
-            ></script>
-=======
         ></script>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
         <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
             crossorigin="anonymous"
-<<<<<<< HEAD
-            ></script>
-        <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-        <script src="{{ url('assets/js/adminlte.js')}}"></script>
-        <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
-       
-=======
         ></script>
         <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
-        <script src="{{ url('/js/adminlte.js') }}"></script>
+        <script src="../js/adminlte.js"></script>
         <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
+        <script>
+            const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
+            const Default = {
+                scrollbarTheme: "os-theme-light",
+                scrollbarAutoHide: "leave",
+                scrollbarClickScroll: true,
+            };
+            document.addEventListener("DOMContentLoaded", function () {
+                const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+
+                // Disable OverlayScrollbars on mobile devices to prevent touch interference
+                const isMobile = window.innerWidth <= 992;
+
+                if (sidebarWrapper && OverlayScrollbarsGlobal?.OverlayScrollbars !== undefined && !isMobile) {
+                    OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                        scrollbars: {
+                            theme: Default.scrollbarTheme,
+                            autoHide: Default.scrollbarAutoHide,
+                            clickScroll: Default.scrollbarClickScroll,
+                        },
+                    });
+                }
+            });
+        </script>
+        <!--end::OverlayScrollbars Configure--><!--begin::Color Mode Toggle (#6010)-->
+        <script>
+            (() => {
+                "use strict";
+
+                const STORAGE_KEY = "lte-theme";
+
+                const getStoredTheme = () => localStorage.getItem(STORAGE_KEY);
+                const setStoredTheme = (theme) => localStorage.setItem(STORAGE_KEY, theme);
+
+                const prefersDark = () => globalThis.matchMedia("(prefers-color-scheme: dark)").matches;
+
+                const getPreferredTheme = () => {
+                    const stored = getStoredTheme();
+                    if (stored) return stored;
+                    return prefersDark() ? "dark" : "light";
+                };
+
+                const setTheme = (theme) => {
+                    const resolved = theme === "auto" ? (prefersDark() ? "dark" : "light") : theme;
+                    document.documentElement.setAttribute("data-bs-theme", resolved);
+                };
+
+                setTheme(getPreferredTheme());
+
+                const showActiveTheme = (theme) => {
+                    // Highlight the active dropdown option
+                    document.querySelectorAll("[data-bs-theme-value]").forEach((el) => {
+                        el.classList.remove("active");
+                        el.setAttribute("aria-pressed", "false");
+                        const check = el.querySelector(".bi-check-lg");
+                        if (check) check.classList.add("d-none");
+                    });
+                    const active = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+                    if (active) {
+                        active.classList.add("active");
+                        active.setAttribute("aria-pressed", "true");
+                        const check = active.querySelector(".bi-check-lg");
+                        if (check) check.classList.remove("d-none");
+                    }
+                    // Sync the topbar trigger icon
+                    document.querySelectorAll("[data-lte-theme-icon]").forEach((icon) => {
+                        icon.classList.toggle("d-none", icon.dataset.lteThemeIcon !== theme);
+                    });
+                };
+
+                globalThis.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+                    const stored = getStoredTheme();
+                    if (!stored || stored === "auto") setTheme(getPreferredTheme());
+                });
+
+                document.addEventListener("DOMContentLoaded", () => {
+                    showActiveTheme(getPreferredTheme());
+                    document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
+                        toggle.addEventListener("click", () => {
+                            const theme = toggle.getAttribute("data-bs-theme-value");
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        });
+                    });
+                });
+            })();
+        </script>
         <!--end::Color Mode Toggle-->
         <!--end::Script-->
     </body>
     <!--end::Body-->
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> b80778736e79fc83cfd17e3582d4491083aa35b4
